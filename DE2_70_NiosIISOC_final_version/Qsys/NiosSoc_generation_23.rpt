@@ -1,0 +1,230 @@
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=C:/Users/USER/Desktop/DE2_70_NiosIISOC_final_version/Qsys/ --output-directory=C:/Users/USER/Desktop/DE2_70_NiosIISOC_final_version/Qsys/NiosSoc/synthesis/ --file-set=QUARTUS_SYNTH --report-file=sopcinfo:C:/Users/USER/Desktop/DE2_70_NiosIISOC_final_version/Qsys/NiosSoc.sopcinfo --report-file=html:C:/Users/USER/Desktop/DE2_70_NiosIISOC_final_version/Qsys/NiosSoc.html --report-file=qip:C:/Users/USER/Desktop/DE2_70_NiosIISOC_final_version/Qsys/NiosSoc/synthesis/NiosSoc.qip --report-file=cmp:C:/Users/USER/Desktop/DE2_70_NiosIISOC_final_version/Qsys/NiosSoc.cmp --report-file=svd --system-info=DEVICE_FAMILY="Cyclone II" --system-info=DEVICE=EP2C70F896C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=C:/Users/USER/Desktop/DE2_70_NiosIISOC_final_version/Qsys/NiosSoc.qsys --language=VERILOG
+Progress: Loading Qsys/NiosSoc.qsys
+Progress: Reading input file
+Progress: Adding clk_50M [clock_source 13.0]
+Progress: Parameterizing module clk_50M
+Progress: Adding syspll [altpll 13.0]
+Progress: Parameterizing module syspll
+Progress: Adding nios2cpu [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2cpu
+Progress: Adding sdram_ctrl [altera_avalon_new_sdram_controller 13.0.1.99.2]
+Progress: Parameterizing module sdram_ctrl
+Progress: Adding APB [altera_avalon_mm_bridge 13.0]
+Progress: Parameterizing module APB
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart
+Progress: Adding timer [altera_avalon_timer 13.0.1.99.2]
+Progress: Parameterizing module timer
+Progress: Adding uart0 [altera_avalon_uart 13.0.1.99.2]
+Progress: Parameterizing module uart0
+Progress: Adding led [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module led
+Progress: Adding dma [altera_avalon_dma 13.0.1.99.2]
+Progress: Parameterizing module dma
+Progress: Adding ltm_mm_if [ltm_mm 1.0]
+Progress: Parameterizing module ltm_mm_if
+Progress: Adding touchx [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module touchx
+Progress: Adding touchy [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module touchy
+Progress: Adding touchirq [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module touchirq
+Progress: Adding ext_flash [altera_generic_tristate_controller 13.0]
+Progress: Parameterizing module ext_flash
+Progress: Adding ext_flash_bridge [altera_tristate_conduit_bridge 13.0]
+Progress: Parameterizing module ext_flash_bridge
+Progress: Adding nios_custom_instr_floating_point_0 [altera_nios_custom_instr_floating_point 13.0]
+Progress: Parameterizing module nios_custom_instr_floating_point_0
+Progress: Adding button [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module button
+Progress: Adding SEG0 [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module SEG0
+Progress: Adding SEG1 [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module SEG1
+Progress: Adding SEG2 [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module SEG2
+Progress: Adding SEG3 [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module SEG3
+Progress: Adding SEG4 [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module SEG4
+Progress: Adding SEG5 [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module SEG5
+Progress: Adding SEG6 [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module SEG6
+Progress: Adding SEG7 [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module SEG7
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: NiosSoc.dma: Construct FIFO from memory blocks instead of registers to avoid excessive LE usage.
+Warning: NiosSoc.ext_flash: Properties (isFlash,isMemoryDevice,isNonVolatileStorage) have been set on interface uas - in composed mode these are ignored
+Info: NiosSoc.button: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: NiosSoc: Generating NiosSoc "NiosSoc" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 26 modules, 111 connections
+Info: merlin_custom_instruction_transform: After transform: 29 modules, 114 connections
+Info: merlin_translator_transform: After transform: 58 modules, 229 connections
+Info: merlin_domain_transform: After transform: 127 modules, 652 connections
+Info: merlin_router_transform: After transform: 156 modules, 767 connections
+Info: merlin_traffic_limiter_transform: After transform: 158 modules, 777 connections
+Info: merlin_burst_transform: After transform: 161 modules, 789 connections
+Info: reset_adaptation_transform: After transform: 164 modules, 621 connections
+Info: merlin_network_to_switch_transform: After transform: 220 modules, 743 connections
+Info: merlin_width_transform: After transform: 222 modules, 749 connections
+Info: Inserting clock-crossing logic between cmd_xbar_demux_001.src4 and cmd_xbar_mux_004.sink0
+Info: Inserting clock-crossing logic between rsp_xbar_demux_004.src0 and rsp_xbar_mux_001.sink4
+Info: Inserting clock-crossing logic between cmd_xbar_demux_005.src0 and cmd_xbar_mux_010.sink0
+Info: Inserting clock-crossing logic between cmd_xbar_demux_005.src1 and cmd_xbar_mux_011.sink0
+Info: Inserting clock-crossing logic between cmd_xbar_demux_005.src2 and cmd_xbar_mux_012.sink0
+Info: Inserting clock-crossing logic between cmd_xbar_demux_005.src3 and cmd_xbar_mux_013.sink0
+Info: Inserting clock-crossing logic between cmd_xbar_demux_005.src4 and cmd_xbar_mux_014.sink0
+Info: Inserting clock-crossing logic between cmd_xbar_demux_005.src5 and cmd_xbar_mux_015.sink0
+Info: Inserting clock-crossing logic between cmd_xbar_demux_005.src6 and cmd_xbar_mux_016.sink0
+Info: Inserting clock-crossing logic between cmd_xbar_demux_005.src7 and cmd_xbar_mux_017.sink0
+Info: Inserting clock-crossing logic between cmd_xbar_demux_005.src8 and cmd_xbar_mux_018.sink0
+Info: Inserting clock-crossing logic between cmd_xbar_demux_005.src9 and cmd_xbar_mux_019.sink0
+Info: Inserting clock-crossing logic between cmd_xbar_demux_005.src10 and cmd_xbar_mux_020.sink0
+Info: Inserting clock-crossing logic between cmd_xbar_demux_005.src11 and cmd_xbar_mux_021.sink0
+Info: Inserting clock-crossing logic between cmd_xbar_demux_005.src12 and cmd_xbar_mux_022.sink0
+Info: Inserting clock-crossing logic between rsp_xbar_demux_010.src0 and rsp_xbar_mux_005.sink0
+Info: Inserting clock-crossing logic between rsp_xbar_demux_011.src0 and rsp_xbar_mux_005.sink1
+Info: Inserting clock-crossing logic between rsp_xbar_demux_012.src0 and rsp_xbar_mux_005.sink2
+Info: Inserting clock-crossing logic between rsp_xbar_demux_013.src0 and rsp_xbar_mux_005.sink3
+Info: Inserting clock-crossing logic between rsp_xbar_demux_014.src0 and rsp_xbar_mux_005.sink4
+Info: Inserting clock-crossing logic between rsp_xbar_demux_015.src0 and rsp_xbar_mux_005.sink5
+Info: Inserting clock-crossing logic between rsp_xbar_demux_016.src0 and rsp_xbar_mux_005.sink6
+Info: Inserting clock-crossing logic between rsp_xbar_demux_017.src0 and rsp_xbar_mux_005.sink7
+Info: Inserting clock-crossing logic between rsp_xbar_demux_018.src0 and rsp_xbar_mux_005.sink8
+Info: Inserting clock-crossing logic between rsp_xbar_demux_019.src0 and rsp_xbar_mux_005.sink9
+Info: Inserting clock-crossing logic between rsp_xbar_demux_020.src0 and rsp_xbar_mux_005.sink10
+Info: Inserting clock-crossing logic between rsp_xbar_demux_021.src0 and rsp_xbar_mux_005.sink11
+Info: Inserting clock-crossing logic between rsp_xbar_demux_022.src0 and rsp_xbar_mux_005.sink12
+Info: com_altera_sopcmodel_transforms_avalon_ClockCrossingTransform: After transform: 250 modules, 889 connections
+Info: limiter_update_transform: After transform: 250 modules, 891 connections
+Info: merlin_mm_transform: After transform: 250 modules, 891 connections
+Info: merlin_interrupt_mapper_transform: After transform: 251 modules, 894 connections
+Info: merlin_interrupt_sync_transform: After transform: 255 modules, 914 connections
+Warning: NiosSoc: "No matching role found for nios2cpu_custom_instruction_master_multi_xconnect:ci_slave:ci_slave_ipending (ipending)"
+Warning: NiosSoc: "No matching role found for nios2cpu_custom_instruction_master_multi_xconnect:ci_slave:ci_slave_estatus (estatus)"
+Warning: NiosSoc: "No matching role found for ltm_mm_if:m1:avm_m1_flush (flush)"
+Warning: NiosSoc: "No matching role found for uart0:s1:dataavailable (dataavailable)"
+Warning: NiosSoc: "No matching role found for uart0:s1:readyfordata (readyfordata)"
+Info: syspll: "NiosSoc" instantiated altpll "syspll"
+Info: nios2cpu: Starting RTL generation for module 'NiosSoc_nios2cpu'
+Info: nios2cpu:   Generation command is [exec C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=NiosSoc_nios2cpu --dir=C:/Users/USER/AppData/Local/Temp/alt0063_4257683198115244797.dir/0003_nios2cpu_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/USER/AppData/Local/Temp/alt0063_4257683198115244797.dir/0003_nios2cpu_gen//NiosSoc_nios2cpu_processor_configuration.pl  --do_build_sim=0    --bogus  ]
+Info: nios2cpu: # 2024.12.06 16:53:53 (*) Starting Nios II generation
+Info: nios2cpu: # 2024.12.06 16:53:53 (*)   Checking for plaintext license.
+Info: nios2cpu: # 2024.12.06 16:53:54 (*)   Plaintext license not found.
+Info: nios2cpu: # 2024.12.06 16:53:54 (*)   No license required to generate encrypted Nios II/e.
+Info: nios2cpu: # 2024.12.06 16:53:54 (*)   Elaborating CPU configuration settings
+Info: nios2cpu: # 2024.12.06 16:53:54 (*)   Creating all objects for CPU
+Info: nios2cpu: # 2024.12.06 16:53:54 (*)   Generating RTL from CPU objects
+Info: nios2cpu: # 2024.12.06 16:53:54 (*)   Creating plain-text RTL
+Info: nios2cpu: # 2024.12.06 16:53:55 (*) Done Nios II generation
+Info: nios2cpu: Done RTL generation for module 'NiosSoc_nios2cpu'
+Info: nios2cpu: "NiosSoc" instantiated altera_nios2_qsys "nios2cpu"
+Info: sdram_ctrl: Starting RTL generation for module 'NiosSoc_sdram_ctrl'
+Info: sdram_ctrl:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=NiosSoc_sdram_ctrl --dir=C:/Users/USER/AppData/Local/Temp/alt0063_4257683198115244797.dir/0004_sdram_ctrl_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/USER/AppData/Local/Temp/alt0063_4257683198115244797.dir/0004_sdram_ctrl_gen//NiosSoc_sdram_ctrl_component_configuration.pl  --do_build_sim=0  ]
+Info: sdram_ctrl: Done RTL generation for module 'NiosSoc_sdram_ctrl'
+Info: sdram_ctrl: "NiosSoc" instantiated altera_avalon_new_sdram_controller "sdram_ctrl"
+Info: APB: "NiosSoc" instantiated altera_avalon_mm_bridge "APB"
+Info: jtag_uart: Starting RTL generation for module 'NiosSoc_jtag_uart'
+Info: jtag_uart:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=NiosSoc_jtag_uart --dir=C:/Users/USER/AppData/Local/Temp/alt0063_4257683198115244797.dir/0005_jtag_uart_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/USER/AppData/Local/Temp/alt0063_4257683198115244797.dir/0005_jtag_uart_gen//NiosSoc_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart: Done RTL generation for module 'NiosSoc_jtag_uart'
+Info: jtag_uart: "NiosSoc" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: timer: Starting RTL generation for module 'NiosSoc_timer'
+Info: timer:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=NiosSoc_timer --dir=C:/Users/USER/AppData/Local/Temp/alt0063_4257683198115244797.dir/0006_timer_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/USER/AppData/Local/Temp/alt0063_4257683198115244797.dir/0006_timer_gen//NiosSoc_timer_component_configuration.pl  --do_build_sim=0  ]
+Info: timer: Done RTL generation for module 'NiosSoc_timer'
+Info: timer: "NiosSoc" instantiated altera_avalon_timer "timer"
+Info: uart0: Starting RTL generation for module 'NiosSoc_uart0'
+Info: uart0:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart/generate_rtl.pl --name=NiosSoc_uart0 --dir=C:/Users/USER/AppData/Local/Temp/alt0063_4257683198115244797.dir/0007_uart0_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/USER/AppData/Local/Temp/alt0063_4257683198115244797.dir/0007_uart0_gen//NiosSoc_uart0_component_configuration.pl  --do_build_sim=0  ]
+Info: uart0: Done RTL generation for module 'NiosSoc_uart0'
+Info: uart0: "NiosSoc" instantiated altera_avalon_uart "uart0"
+Info: led: Starting RTL generation for module 'NiosSoc_led'
+Info: led:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=NiosSoc_led --dir=C:/Users/USER/AppData/Local/Temp/alt0063_4257683198115244797.dir/0008_led_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/USER/AppData/Local/Temp/alt0063_4257683198115244797.dir/0008_led_gen//NiosSoc_led_component_configuration.pl  --do_build_sim=0  ]
+Info: led: Done RTL generation for module 'NiosSoc_led'
+Info: led: "NiosSoc" instantiated altera_avalon_pio "led"
+Info: dma: Starting RTL generation for module 'NiosSoc_dma'
+Info: dma:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_dma -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_dma/generate_rtl.pl --name=NiosSoc_dma --dir=C:/Users/USER/AppData/Local/Temp/alt0063_4257683198115244797.dir/0009_dma_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/USER/AppData/Local/Temp/alt0063_4257683198115244797.dir/0009_dma_gen//NiosSoc_dma_component_configuration.pl  --do_build_sim=0  ]
+Info: dma: # 2024.12.06 16:53:56 (*)   NiosSoc_dma: allowing these transactions: word, hw, byte_access
+Info: dma: Done RTL generation for module 'NiosSoc_dma'
+Info: dma: "NiosSoc" instantiated altera_avalon_dma "dma"
+Info: ltm_mm_if: "NiosSoc" instantiated ltm_mm "ltm_mm_if"
+Info: touchx: Starting RTL generation for module 'NiosSoc_touchx'
+Info: touchx:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=NiosSoc_touchx --dir=C:/Users/USER/AppData/Local/Temp/alt0063_4257683198115244797.dir/0011_touchx_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/USER/AppData/Local/Temp/alt0063_4257683198115244797.dir/0011_touchx_gen//NiosSoc_touchx_component_configuration.pl  --do_build_sim=0  ]
+Info: touchx: Done RTL generation for module 'NiosSoc_touchx'
+Info: touchx: "NiosSoc" instantiated altera_avalon_pio "touchx"
+Info: touchirq: Starting RTL generation for module 'NiosSoc_touchirq'
+Info: touchirq:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=NiosSoc_touchirq --dir=C:/Users/USER/AppData/Local/Temp/alt0063_4257683198115244797.dir/0012_touchirq_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/USER/AppData/Local/Temp/alt0063_4257683198115244797.dir/0012_touchirq_gen//NiosSoc_touchirq_component_configuration.pl  --do_build_sim=0  ]
+Info: touchirq: Done RTL generation for module 'NiosSoc_touchirq'
+Info: touchirq: "NiosSoc" instantiated altera_avalon_pio "touchirq"
+Info: pipeline_bridge_swap_transform: After transform: 5 modules, 10 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 5 modules, 10 connections
+Info: ext_flash: "NiosSoc" instantiated altera_generic_tristate_controller "ext_flash"
+Info: ext_flash_bridge: "NiosSoc" instantiated altera_tristate_conduit_bridge "ext_flash_bridge"
+Info: nios_custom_instr_floating_point_0: "NiosSoc" instantiated altera_nios_custom_instr_floating_point "nios_custom_instr_floating_point_0"
+Info: button: Starting RTL generation for module 'NiosSoc_button'
+Info: button:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=NiosSoc_button --dir=C:/Users/USER/AppData/Local/Temp/alt0063_4257683198115244797.dir/0014_button_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/USER/AppData/Local/Temp/alt0063_4257683198115244797.dir/0014_button_gen//NiosSoc_button_component_configuration.pl  --do_build_sim=0  ]
+Info: button: Done RTL generation for module 'NiosSoc_button'
+Info: button: "NiosSoc" instantiated altera_avalon_pio "button"
+Info: SEG0: Starting RTL generation for module 'NiosSoc_SEG0'
+Info: SEG0:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=NiosSoc_SEG0 --dir=C:/Users/USER/AppData/Local/Temp/alt0063_4257683198115244797.dir/0015_SEG0_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/USER/AppData/Local/Temp/alt0063_4257683198115244797.dir/0015_SEG0_gen//NiosSoc_SEG0_component_configuration.pl  --do_build_sim=0  ]
+Info: SEG0: Done RTL generation for module 'NiosSoc_SEG0'
+Info: SEG0: "NiosSoc" instantiated altera_avalon_pio "SEG0"
+Info: nios2cpu_custom_instruction_master_translator: "NiosSoc" instantiated altera_customins_master_translator "nios2cpu_custom_instruction_master_translator"
+Info: nios2cpu_custom_instruction_master_multi_xconnect: "NiosSoc" instantiated altera_customins_xconnect "nios2cpu_custom_instruction_master_multi_xconnect"
+Info: nios2cpu_custom_instruction_master_multi_slave_translator0: "NiosSoc" instantiated altera_customins_slave_translator "nios2cpu_custom_instruction_master_multi_slave_translator0"
+Info: nios2cpu_instruction_master_translator: "NiosSoc" instantiated altera_merlin_master_translator "nios2cpu_instruction_master_translator"
+Info: nios2cpu_jtag_debug_module_translator: "NiosSoc" instantiated altera_merlin_slave_translator "nios2cpu_jtag_debug_module_translator"
+Info: nios2cpu_instruction_master_translator_avalon_universal_master_0_agent: "NiosSoc" instantiated altera_merlin_master_agent "nios2cpu_instruction_master_translator_avalon_universal_master_0_agent"
+Info: nios2cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent: "NiosSoc" instantiated altera_merlin_slave_agent "nios2cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: nios2cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "NiosSoc" instantiated altera_avalon_sc_fifo "nios2cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "NiosSoc" instantiated altera_merlin_router "addr_router"
+Info: addr_router_001: "NiosSoc" instantiated altera_merlin_router "addr_router_001"
+Info: addr_router_002: "NiosSoc" instantiated altera_merlin_router "addr_router_002"
+Info: addr_router_004: "NiosSoc" instantiated altera_merlin_router "addr_router_004"
+Info: id_router: "NiosSoc" instantiated altera_merlin_router "id_router"
+Info: id_router_001: "NiosSoc" instantiated altera_merlin_router "id_router_001"
+Info: id_router_002: "NiosSoc" instantiated altera_merlin_router "id_router_002"
+Info: id_router_003: "NiosSoc" instantiated altera_merlin_router "id_router_003"
+Info: id_router_004: "NiosSoc" instantiated altera_merlin_router "id_router_004"
+Info: addr_router_005: "NiosSoc" instantiated altera_merlin_router "addr_router_005"
+Info: id_router_010: "NiosSoc" instantiated altera_merlin_router "id_router_010"
+Info: limiter: "NiosSoc" instantiated altera_merlin_traffic_limiter "limiter"
+Info: burst_adapter: "NiosSoc" instantiated altera_merlin_burst_adapter "burst_adapter"
+Info: rst_controller: "NiosSoc" instantiated altera_reset_controller "rst_controller"
+Info: cmd_xbar_demux: "NiosSoc" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_demux_001: "NiosSoc" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_001"
+Info: cmd_xbar_demux_002: "NiosSoc" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_002"
+Info: cmd_xbar_demux_003: "NiosSoc" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_003"
+Info: cmd_xbar_demux_004: "NiosSoc" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_004"
+Info: cmd_xbar_mux: "NiosSoc" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: cmd_xbar_mux_001: "NiosSoc" instantiated altera_merlin_multiplexer "cmd_xbar_mux_001"
+Info: Reusing file C:/Users/USER/Desktop/DE2_70_NiosIISOC_final_version/Qsys/NiosSoc/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: cmd_xbar_mux_002: "NiosSoc" instantiated altera_merlin_multiplexer "cmd_xbar_mux_002"
+Info: Reusing file C:/Users/USER/Desktop/DE2_70_NiosIISOC_final_version/Qsys/NiosSoc/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_demux_001: "NiosSoc" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_001"
+Info: rsp_xbar_mux: "NiosSoc" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file C:/Users/USER/Desktop/DE2_70_NiosIISOC_final_version/Qsys/NiosSoc/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_001: "NiosSoc" instantiated altera_merlin_multiplexer "rsp_xbar_mux_001"
+Info: Reusing file C:/Users/USER/Desktop/DE2_70_NiosIISOC_final_version/Qsys/NiosSoc/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_002: "NiosSoc" instantiated altera_merlin_multiplexer "rsp_xbar_mux_002"
+Info: Reusing file C:/Users/USER/Desktop/DE2_70_NiosIISOC_final_version/Qsys/NiosSoc/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: cmd_xbar_demux_005: "NiosSoc" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_005"
+Info: rsp_xbar_demux_010: "NiosSoc" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_010"
+Info: rsp_xbar_mux_005: "NiosSoc" instantiated altera_merlin_multiplexer "rsp_xbar_mux_005"
+Info: Reusing file C:/Users/USER/Desktop/DE2_70_NiosIISOC_final_version/Qsys/NiosSoc/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: width_adapter: "NiosSoc" instantiated altera_merlin_width_adapter "width_adapter"
+Info: Reusing file C:/Users/USER/Desktop/DE2_70_NiosIISOC_final_version/Qsys/NiosSoc/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/USER/Desktop/DE2_70_NiosIISOC_final_version/Qsys/NiosSoc/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: crosser: "NiosSoc" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
+Info: Reusing file C:/Users/USER/Desktop/DE2_70_NiosIISOC_final_version/Qsys/NiosSoc/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: irq_mapper: "NiosSoc" instantiated altera_irq_mapper "irq_mapper"
+Info: irq_synchronizer: "NiosSoc" instantiated altera_irq_clock_crosser "irq_synchronizer"
+Info: tdt: "ext_flash" instantiated altera_tristate_controller_translator "tdt"
+Info: tda: "ext_flash" instantiated altera_tristate_controller_aggregator "tda"
+Info: NiosSoc: Done NiosSoc" with 61 modules, 345 files, 6350237 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

@@ -1,0 +1,49 @@
+	component NiosSoc is
+		port (
+			clk_clk                            : in    std_logic                     := 'X';             -- clk
+			reset_reset_n                      : in    std_logic                     := 'X';             -- reset_n
+			sdram_wires_addr                   : out   std_logic_vector(12 downto 0);                    -- addr
+			sdram_wires_ba                     : out   std_logic_vector(1 downto 0);                     -- ba
+			sdram_wires_cas_n                  : out   std_logic;                                        -- cas_n
+			sdram_wires_cke                    : out   std_logic;                                        -- cke
+			sdram_wires_cs_n                   : out   std_logic;                                        -- cs_n
+			sdram_wires_dq                     : inout std_logic_vector(31 downto 0) := (others => 'X'); -- dq
+			sdram_wires_dqm                    : out   std_logic_vector(3 downto 0);                     -- dqm
+			sdram_wires_ras_n                  : out   std_logic;                                        -- ras_n
+			sdram_wires_we_n                   : out   std_logic;                                        -- we_n
+			uart0_rxd                          : in    std_logic                     := 'X';             -- rxd
+			uart0_txd                          : out   std_logic;                                        -- txd
+			led_export                         : out   std_logic_vector(8 downto 0);                     -- export
+			areset_export                      : in    std_logic                     := 'X';             -- export
+			locked_export                      : out   std_logic;                                        -- export
+			phasedone_export                   : out   std_logic;                                        -- export
+			dram_clk_clk                       : out   std_logic;                                        -- clk
+			ltm_mm_export_iVD                  : in    std_logic                     := 'X';             -- iVD
+			ltm_mm_export_iRDCLK               : in    std_logic                     := 'X';             -- iRDCLK
+			ltm_mm_export_iRDREQ               : in    std_logic                     := 'X';             -- iRDREQ
+			ltm_mm_export_oRDDATA              : out   std_logic_vector(31 downto 0);                    -- oRDDATA
+			ltm_mm_export_oRDVal               : out   std_logic;                                        -- oRDVal
+			ltm_mm_export_oPixelX              : out   std_logic_vector(9 downto 0);                     -- oPixelX
+			ltm_mm_export_oPixelY              : out   std_logic_vector(9 downto 0);                     -- oPixelY
+			ltm_mm_export_oFIFO_FULL           : out   std_logic;                                        -- oFIFO_FULL
+			ltm_mm_export_oFIFO_EMPTY          : out   std_logic;                                        -- oFIFO_EMPTY
+			touchirq_export                    : in    std_logic                     := 'X';             -- export
+			touchy_export                      : in    std_logic_vector(11 downto 0) := (others => 'X'); -- export
+			touchx_export                      : in    std_logic_vector(11 downto 0) := (others => 'X'); -- export
+			ext_flash_out_tcm_address_out      : out   std_logic_vector(22 downto 0);                    -- tcm_address_out
+			ext_flash_out_tcm_read_n_out       : out   std_logic_vector(0 downto 0);                     -- tcm_read_n_out
+			ext_flash_out_tcm_write_n_out      : out   std_logic_vector(0 downto 0);                     -- tcm_write_n_out
+			ext_flash_out_tcm_data_out         : inout std_logic_vector(15 downto 0) := (others => 'X'); -- tcm_data_out
+			ext_flash_out_tcm_chipselect_n_out : out   std_logic_vector(0 downto 0);                     -- tcm_chipselect_n_out
+			button_export                      : in    std_logic_vector(3 downto 0)  := (others => 'X'); -- export
+			seg0_export                        : out   std_logic_vector(7 downto 0);                     -- export
+			seg1_export                        : out   std_logic_vector(7 downto 0);                     -- export
+			seg2_export                        : out   std_logic_vector(7 downto 0);                     -- export
+			seg3_export                        : out   std_logic_vector(7 downto 0);                     -- export
+			seg4_export                        : out   std_logic_vector(7 downto 0);                     -- export
+			seg5_export                        : out   std_logic_vector(7 downto 0);                     -- export
+			seg6_export                        : out   std_logic_vector(7 downto 0);                     -- export
+			seg7_export                        : out   std_logic_vector(7 downto 0)                      -- export
+		);
+	end component NiosSoc;
+
